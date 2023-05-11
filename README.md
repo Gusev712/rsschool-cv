@@ -1,1 +1,1 @@
-![rsschool-cv](https://Gusev712.github.io/rsschool-cv/cv.md)
+![rsschool-cv](https://gusev712.github.io/rsschool-cv/)
