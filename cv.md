@@ -6,7 +6,6 @@
 **E-mail:** gusev.7ema@yandex.ru   
 **Telegram:** @Gusar_654   
 **Git-Hub:** Gusev-712
-###
 
 *******
 
