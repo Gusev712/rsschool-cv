@@ -1,11 +1,227 @@
-body {
-	background: 
-		linear-gradient(rgba(142, 141, 139, 0.347), rgba(85, 85, 84, 0.703)), 
-		url(fon.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: top; 
-      background-size: contain;
-      background-size:cover;
-      background-size: 80em 45,71428571em;   
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,600;0,700;1,600;1,700&family=Roboto:ital,wght@1,300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+}
+body
+{
+    background: rgba(255, 249, 230, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: rgba(217, 213, 197, 150);
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.container .Left_side
+{
+    position: relative;
+    background: rgba(166, 150, 134, 255);
+    padding: 40px;
+    border-radius: 30px;
+}
+.profileText
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+.profileText .imgBx
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profileText .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profileText h2
+{
+    color: rgba(255, 249, 230, 255);
+    font-size: 1.5em;
+    margin-top: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+.profileText h2 span
+{
+    font-size: 0.6em;
+    font-weight: 100;
+}
+.contactInfo
+{
+    padding-top: 40px;
+}
+.title
+{
+    color: rgba(255, 249, 230, 255);
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+
+}
+.contactInfo ul
+{
+    position: relative;
+}
+.contactInfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contactInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: rgba(255, 249, 230, 255);
+}
+.contactInfo ul li span
+{
+    color: rgba(255, 249, 230, 255);
+    font-weight: 300;
+}
+.contactInfo.language .percent
+{
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 249, 230, 255);
+    display: block;
+    margin-top: 5px;
+}
+.contactInfo.language .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(107, 96, 85, 255);
+}
+.container .Right_side
+{
+    position: relative;
+    background: rgba(217, 213, 197, 200);
+    padding: 40px;
+    border-radius: 30px;
+}
+.about
+{
+    margin-bottom: 50px;
+}
+.about:last-child
+{
+    margin-bottom: 0;
+}
+.title2
+{
+    color: rgba(87, 78, 68, 255);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p
+{
+    color: rgba(87, 78, 68, 255);
+}
+.about ul li 
+{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.about ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: rgba(87, 78, 68, 255) ;
+}
+.about ul li span
+{
+    color: rgba(87, 78, 68, 255);
+    font-weight: 300;
+}
+.code pre code
+{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 150px;
+    margin: 9px;
+    background: rgba(166, 150, 134, 255);
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+    color: rgba(255, 249, 230, 255);
+}
+.interest ul
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.interest ul li
+{
+    list-style: none;
+    color: rgba(87, 78, 68, 255);
+    font-weight: 500;
+    margin: 10px;
+}
+.interest ul li .fa 
+{
+    color: rgba(87, 78, 68, 255);
+    font-size: 18px;
+    width: 25px;
+}
+
+@media(max-width: 1000px)
+{
+    .container
+    {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul 
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width: 600px)
+{
+    .interest ul 
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
 }
